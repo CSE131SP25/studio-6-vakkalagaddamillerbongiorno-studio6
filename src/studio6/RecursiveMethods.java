@@ -53,11 +53,14 @@ public class RecursiveMethods {
 	 * @return an array with the same data as the input but it reverse order
 	 */
 	public static int[] toReversed(int[] array) {
-		int[]reversed = new int[array.length];
+		 int[]reversed = new int[array.length];
+		 return reversed;
 			// FIXME create a helper method that can recursively reverse the given array
-		
-			return new int[0];
-		
+	}
+	public static int[] helperMethod(int[] array, int[] reversed, int index) {
+		reversed[array.length -1 - index] = array[index];
+		helperMethod(array, reversed, index -1);
+		return reversed;
 	}
 
 	/**
