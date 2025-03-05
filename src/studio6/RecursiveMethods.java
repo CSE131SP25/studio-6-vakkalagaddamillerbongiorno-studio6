@@ -42,7 +42,6 @@ public class RecursiveMethods {
 			circlesUponCircles(xCenter+radius, yCenter, radius/3.0, radiusMinimumDrawingThreshold);
 			circlesUponCircles(xCenter, yCenter - radius, radius/3.0, radiusMinimumDrawingThreshold);
 			circlesUponCircles(xCenter, yCenter + radius, radius/3.0, radiusMinimumDrawingThreshold);
-
 		}
 	}
 	
@@ -54,8 +53,9 @@ public class RecursiveMethods {
 	 * @return an array with the same data as the input but it reverse order
 	 */
 	public static int[] toReversed(int[] array) {
-		
+		int[]reversed = new int[array.length];
 			// FIXME create a helper method that can recursively reverse the given array
+		
 			return new int[0];
 		
 	}
